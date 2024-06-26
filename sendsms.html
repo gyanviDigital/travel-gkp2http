@@ -1,0 +1,177 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from www.kesherwanitravels.com/sendsms.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Jun 2024 07:12:13 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head><title>
+	SendSms
+</title>
+    <style type="text/css">
+     .smspanel
+     {
+     	
+     	background-repeat:no-repeat;
+     	width:410px;
+     	height:553px;
+     	padding:0px;
+     	margin:0px;
+     }
+     .txt
+     {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align:justify;
+	font-size:12px;
+	padding:5px 10px 0px 10px;
+	margin:0px;
+	line-height:18px;
+	color:White;
+}
+h3
+{
+	font-family: Arial, Helvetica, sans-serif;
+	text-align:center;
+	font-size:15px;
+	padding:0px 10px 0px 10px;
+	color:white;
+	margin:0px;
+}
+.required
+{
+	
+	width:250px;
+	padding:0px;
+	margin:0px;
+	background-color:#FCF0C9; border:1px solid #E47309; font-size:12px; color:black; padding:5px
+}
+
+.required1
+{
+	
+	width:250px;
+	padding:0px;
+	margin:0px;
+	background-color:#FCF0C9; border:1px solid #E47309; font-size:12px; color:black; padding:5px;
+	resize:none;
+}
+    </style>
+    
+    <script type="text/javascript">
+    function KeyPress(e)
+{
+e=window.event||window.which ;
+var keyunicode=e.charCode || e.keyCode
+//Allow alphabetical keys, plus BACKSPACE and SPACE
+if(keyunicode >=47 && keyunicode <=58)
+{
+return true ;
+}
+else 
+{
+alert ("Sorry !! Only Numbers Allowed...!");
+return false ;
+}
+}
+
+function validateForm()
+{
+ if(document.getElementById("txtName").value=="")
+ {
+  alert("Enter Your Name..");
+  document.getElementById("txtName").focus();
+  return false;
+ }
+ if(document.getElementById("txtMobile").value=="")
+ {
+  alert("Please Enter Your Mobile Number..");
+  document.getElementById("txtMobile").focus();
+  return false;
+ }
+
+  if(document.getElementById("txtQuery").value=="")
+ {
+  alert("Please Enter Your Query..");
+  document.getElementById("txtQuery").focus();
+  return false;
+ }
+}
+</script>
+</head>
+<body style="background-color:Black;">
+    <form name="form1" method="post" action="https://www.kesherwanitravels.com/sendsms.aspx" id="form1">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTY4MjI5MjA1MWQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFB2J0blNlbmSt701Aadjs4wbRGgW6KAAOsQbW50n29kgEl1ZwA8YEjA==" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="9FB4ADC3" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAWMbGG6vzmLOFsHkCVYIk2iozoJZpuXxkpOVJKRbHyuHhXE3dkwa1cRACVa3MHp4BuzPStL7VrNe1GVhA4FM8HeEp6Qm6qqBgGb8BmZ9HFEDjSLN15ib/9/974+OHU2F11lyU5ref8e4VOOPYMcVy3j" />
+</div>
+    <div>
+       <center>
+          <table border="0" cellpadding="0" cellspacing="0" align="center">
+             <tr>
+                <td class="smspanel" align="left" valign="top">
+                   <table  border="0" cellpadding="2" cellspacing="0" align="center" width="400" class="txt">
+                   <tr><td><br /><br /><br /><br /><br /></td></tr>
+                   <tr>
+                      <td align="center" valign="top">
+                        <h3>Send SMS</h3> <hr /><br /><br />
+                      </td>
+                      <td>
+                      
+                          <span id="lblMsg"></span>
+                      </td>
+                   </tr>
+                       <tr>
+                <td align="center" valign="top">
+                   Your Name :
+                </td> 
+                
+                <td align="left" valign="top">
+                   <input name="txtName" type="text" id="txtName" class="required" style="width:250px;" />
+                </td>
+             </tr>
+             
+             <tr>
+                <td align="center" valign="top">
+                  Your Mobile :
+                </td>
+                
+                <td align="left" valign="top">
+                   <input name="txtMobile" type="text" id="txtMobile" class="required" onkeypress="return KeyPress(event);" style="width:250px;" />
+                </td>
+             </tr>
+             
+             <tr>
+                <td align="center" valign="top">
+                  Query :
+                </td>
+                
+                <td align="left" valign="top">
+                   <textarea name="txtQuery" rows="2" cols="20" id="txtQuery" class="required1" style="height:120px;width:250px;">
+</textarea>
+                </td>
+             </tr>
+             
+             <tr>
+                <td align="right" valign="top" colspan="2">
+                <br /><br />
+                 
+                   <input type="image" name="btnSend" id="btnSend" img="" src="images/button1.png" src="#" onclick="return validateForm();" style="border-width:0px;" />
+                </td>
+             </tr>
+                   </table>
+                </td>
+             </tr>
+          </table>
+       </center>
+    </div>
+    </form>
+</body>
+
+<!-- Mirrored from www.kesherwanitravels.com/sendsms.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Jun 2024 07:12:14 GMT -->
+</html>
